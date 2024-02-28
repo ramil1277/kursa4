@@ -17,7 +17,7 @@
    <string notr="true">background-color: rgb(28, 113, 216);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTableView" name="tableView">
+   <widget class="QTableView" name="tableView_1">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -33,9 +33,9 @@
    <widget class="QTableView" name="tableView_2">
     <property name="geometry">
      <rect>
-      <x>990</x>
+      <x>950</x>
       <y>70</y>
-      <width>471</width>
+      <width>511</width>
       <height>921</height>
      </rect>
     </property>
@@ -64,7 +64,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>990</x>
+      <x>950</x>
       <y>20</y>
       <width>451</width>
       <height>41</height>
@@ -117,7 +117,7 @@
       <string>Изменить</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="del">
+    <widget class="QPushButton" name="dele">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -131,7 +131,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_2">
+   <widget class="QGroupBox" name="groupBox_fly_1">
     <property name="geometry">
      <rect>
       <x>690</x>
@@ -143,7 +143,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QPushButton" name="ok">
+    <widget class="QPushButton" name="ok_1">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -156,7 +156,7 @@
       <string>ok</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="cancel">
+    <widget class="QPushButton" name="cancel_1">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -308,7 +308,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_3">
+   <widget class="QGroupBox" name="groupBox_fly_2">
     <property name="geometry">
      <rect>
       <x>690</x>
@@ -320,7 +320,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QPushButton" name="ok_2">
+    <widget class="QPushButton" name="ok_change_1">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -333,7 +333,7 @@
       <string>Ок</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="cancel_2">
+    <widget class="QPushButton" name="cancel_change_1">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -537,7 +537,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_5">
+   <widget class="QGroupBox" name="groupBox_ticked_1">
     <property name="geometry">
      <rect>
       <x>1650</x>
@@ -549,7 +549,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QPushButton" name="ok_3">
+    <widget class="QPushButton" name="ok_2">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -562,7 +562,7 @@
       <string>Ок</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="cancel_3">
+    <widget class="QPushButton" name="cancel_2">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -622,7 +622,7 @@
      </property>
     </widget>
    </widget>
-   <widget class="QGroupBox" name="groupBox_6">
+   <widget class="QGroupBox" name="groupBox_ticked_2">
     <property name="geometry">
      <rect>
       <x>1650</x>
@@ -634,7 +634,7 @@
     <property name="title">
      <string/>
     </property>
-    <widget class="QPushButton" name="ok_6">
+    <widget class="QPushButton" name="ok_change_2">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -647,7 +647,7 @@
       <string>Ок</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="cancel_6">
+    <widget class="QPushButton" name="cancel_change_2">
      <property name="geometry">
       <rect>
        <x>130</x>
@@ -712,8 +712,8 @@
      <rect>
       <x>519</x>
       <y>15</y>
-      <width>181</width>
-      <height>31</height>
+      <width>211</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
