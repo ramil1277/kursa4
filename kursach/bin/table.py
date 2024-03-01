@@ -36,3 +36,22 @@ class Table:
         query.setHeaderData(2, Qt.Horizontal, "Дата")
         query.setHeaderData(3, Qt.Horizontal, "Кол-во проданных билетов")
         
+    def table_add(self):
+        if self.mainwindow.fly_line.text() and self.mainwindow.finalfly_line.text() and self.mainwindow.timefly_line.text() and self.mainwindow.tipfly_line.text() and self.mainwindow.quantityplace_line.text() and self.mainwindow.priceticket_line.text():
+            query = QSqlQuery()
+            query.exec(f"""INSERT INTO flights(number_flights, final_airport, flyit, tip_airplane, quantity_place, price_tick) 
+                    VALUES ('{self.mainwindow.fly_line.text()}', '{self.mainwindow.finalfly_line.text()}', '{self.mainwindow.timefly_line.text()}', '{self.mainwindow.tipfly_line.text()}', '{self.mainwindow.quantityplace_line.text()}', '{self.mainwindow.priceticket_line.text()}');""")
+            if query.isActive() == False:
+                pass
+        self.table_1()
+        self.mainwindow.groupBox_fly_1.hide()
+        
+    def table_add_2(self):
+        if self.mainwindow.date_add_line.text() and self.mainwindow.quantitetick_line.text():
+            query = QSqlQuery()
+            query.exec(f"""INSERT INTO tickets_sold(date, quntity_tickets_sold) 
+                    VALUES ('{self.mainwindow.date_add_line.text()}', '{self.mainwindow.quantitetick_line.text()}');""")
+            if query.isActive() == False:
+                pass
+        self.table_2()
+        self.mainwindow.groupBox_ticked_1.hide()

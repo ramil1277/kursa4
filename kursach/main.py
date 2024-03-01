@@ -1,11 +1,11 @@
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5.QtSql import *
-from design.mainwindow import Maiwindow
+from design.mainwindow import MainWindow
 from bin.db import Database
 from bin.table import Table
 
-class Main(Maiwindow):
+class Main(MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
@@ -17,6 +17,8 @@ class Main(Maiwindow):
         self.groupBox_fly_2.hide()
         self.groupBox_ticked_1.hide()
         self.groupBox_ticked_2.hide()
+        self.calendarWidget.hide()
+        self.calendarWidget_2.hide()
         
         self.add.setCheckable(True)
         self.add_2.setCheckable(True)
@@ -26,6 +28,8 @@ class Main(Maiwindow):
         self.change.clicked.connect(self.changefly)
         self.add_2.clicked.connect(self.createtick)
         self.change_2.clicked.connect(self.changetick)
+        self.ok_1.clicked.connect(self.table.table_add)
+        self.ok_2.clicked.connect(self.table.table_add_2)
         
     def createfly(self):
         if self.add.isChecked() == True:
